@@ -4,7 +4,8 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'typeface-lobster';
-import App from './App';
+import 'typeface-open-sans';
+import  App  from './App';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
