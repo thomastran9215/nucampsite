@@ -15,12 +15,8 @@ const mapStateToProps = state => {
         comments: state.comments,
         partners: state.partners,
         promotions: state.promotions
-    }
-}
-
-class App extends Component {
-
-    render() {
+    };
+};
 
         const HomePage = () => {
             return (
@@ -28,10 +24,9 @@ class App extends Component {
                     campsite={this.props.campsites.filter(campsite => campsite.featured)[0]}
                     promotion={this.props.promotions.filter(promotion => promotion.featured)[0]}
                     partner={this.props.partners.filter(partner => partner.featured)[0]}
-                
                 />
             );
-        }
+        };
 
         const CampsiteWithId = ({match}) => {
             return(
@@ -59,7 +54,7 @@ class App extends Component {
                 <Footer />
             </div>
         );
-    };
-}
+    
+
 
 export default withRouter(connect(mapStateToProps)(Main));
