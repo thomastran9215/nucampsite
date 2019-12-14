@@ -15,8 +15,12 @@ const mapStateToProps = state => {
         comments: state.comments,
         partners: state.partners,
         promotions: state.promotions
-    };
-};
+    }
+}
+
+class Main extends Component {
+    
+    render() {
 
         const HomePage = () => {
             return (
@@ -54,7 +58,6 @@ const mapStateToProps = state => {
                 <Footer />
             </div>
         );
-    
-
-
+    };
+}
 export default withRouter(connect(mapStateToProps)(Main));
